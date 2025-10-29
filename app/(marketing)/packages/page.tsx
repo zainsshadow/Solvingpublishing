@@ -35,7 +35,15 @@ export default function PackagesPage() {
         {packageTiers.map((t) => (
           <PackageCard key={t.id} tier={t} />
         ))}
+                <div className="flex justify-center">
+          <img
+            src="/images/mg3.png"
+            alt="Solving Publishing logo"
+            className="max-w-[350px] w-full h-auto object-contain"
+          />
+        </div>
       </div>
+      
 
       <section className="space-y-4">
         <h2 className="font-serif text-2xl">Compare tiers</h2>
@@ -91,26 +99,7 @@ export default function PackagesPage() {
             </a>
           </li>
           <li>Call: 737‑358‑6750</li>
-          <li className="mt-1">
-            Social:{" "}
-            <a
-              className="ink-link"
-              href="https://www.instagram.com/thelibertybookpublisherusa/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Instagram
-            </a>{" "}
-            ·{" "}
-            <a
-              className="ink-link"
-              href="https://www.facebook.com/profile.php?id=61566475171547"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Facebook
-            </a>
-          </li>
+
         </ul>
       </section>
 

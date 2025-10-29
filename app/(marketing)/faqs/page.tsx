@@ -29,6 +29,13 @@ export default function FAQsPage() {
           </details>
         ))}
       </div>
+      <div className="flex justify-center">
+  <img
+    src="/images/mg1.png"
+    alt="Solving Publishing logo"
+    className="w-[70%] max-w-[1500px] h-auto object-contain"
+  />
+</div>
     </div>
   )
 }

@@ -185,6 +185,13 @@ export default function HomePage() {
           {packageTiers.map((t) => (
             <PackageCard key={t.id} tier={t} />
           ))}
+                          <div className="flex justify-center">
+          <img
+            src="/images/mg3.png"
+            alt="Solving Publishing logo"
+            className="max-w-[350px] w-full h-auto object-contain"
+          />
+        </div>
         </div>
         <div className="mt-6">
           <Link className="underline text-primary" href="/packages">

@@ -9,9 +9,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12 space-y-10">
       <h1 className="font-serif text-3xl md:text-4xl">About Solving Publishing</h1>
-      <p className="text-muted-foreground">
-        We're a multidisciplinary team of editors, designers, producers, and marketers focused on author success.
-      </p>
+
       <WelcomeLetter />
     </div>
   )

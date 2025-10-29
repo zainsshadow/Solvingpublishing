@@ -80,14 +80,14 @@ export default function PackagesPage() {
         <ul className="text-sm">
           <li>
             Website:{" "}
-            <a className="ink-link" href="https://www.thelibertybookpublisher.com" target="_blank" rel="noreferrer">
-              www.thelibertybookpublisher.com
+            <a className="ink-link" href="https://www.solvingpublishing.com" target="_blank" rel="noreferrer">
+              www.solvingpublishing.com
             </a>
           </li>
           <li>
             Email:{" "}
-            <a className="ink-link" href="mailto:Info@thelibertybookpublisher.com">
-              Info@thelibertybookpublisher.com
+            <a className="ink-link" href="mailto:Info@solvingpublishing.com">
+              Info@solvingpublishing.com
             </a>
           </li>
           <li>Call: 737‑358‑6750</li>

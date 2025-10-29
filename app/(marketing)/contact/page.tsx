@@ -36,6 +36,14 @@ export default function ContactPage({
             <div className="font-medium mb-1">Response time</div>
             <p className="text-sm text-muted-foreground">We typically reply within 1–2 business days.</p>
           </div>
+
+        <div className="flex justify-center">
+          <img
+            src="/images/mg4.png"
+            alt="Solving Publishing logo"
+            className="max-w-[350px] w-full h-auto object-contain"
+          />
+        </div>
         </aside>
       </div>
 

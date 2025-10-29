@@ -110,25 +110,17 @@ export default function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-3 text-sm text-muted-foreground">
-          <div className="rounded-md border bg-card p-3 flex items-center gap-2">
-            <BookOpen className="h-4 w-4 text-primary" aria-hidden="true" />
-            Fiction & Memoir
-          </div>
-          <div className="rounded-md border bg-card p-3 flex items-center gap-2">
-            <Brush className="h-4 w-4 text-primary" aria-hidden="true" />
-            Picture Books
-          </div>
-          <div className="rounded-md border bg-card p-3 flex items-center gap-2">
-            <ImageIcon className="h-4 w-4 text-primary" aria-hidden="true" />
-            Graphic Novels
-          </div>
-          <div className="rounded-md border bg-card p-3 flex items-center gap-2">
-            <Sparkles className="h-4 w-4 text-primary" aria-hidden="true" />
-            Fantasy & Sci‑Fi
-          </div>
-        </div>
+
       </section>
+
+<div className="flex justify-center">
+  <img
+    src="/images/books.png"
+    alt="Solving Publishing logo"
+    className="w-[90%] max-w-[1500px] h-auto object-contain"
+  />
+</div>
+
 
       <section className="container mx-auto px-4 py-12">
         <h2 className="font-serif text-2xl md:text-3xl mb-3">Our Approach</h2>

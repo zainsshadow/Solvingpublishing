@@ -5,7 +5,7 @@ import type { PackageTier } from "@/lib/content/packages"
 
 export function PackageCard({ tier }: { tier: PackageTier }) {
   return (
-    <Card className="h-full border-primary/20">
+    <Card className="h-full border-secondary/20">
       <CardHeader>
         <CardTitle className="font-serif">{tier.name}</CardTitle>
         <CardDescription>{tier.description}</CardDescription>

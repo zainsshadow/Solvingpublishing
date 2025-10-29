@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export function Footer() {
   return (
-    <footer className="border-t bg-secondary/40">
+<footer className="border-t bg-secondary">
       <div className="container mx-auto px-4 py-10 grid gap-8 md:grid-cols-4">
         <div className="space-y-2">
           <div className="font-serif text-xl">Solving Publishing</div>

@@ -5,27 +5,46 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-import { requestBooking } from "@/app/actions/booking"
 
 export function BookingForm() {
   const [pending, setPending] = useState(false)
   const [msg, setMsg] = useState<string | null>(null)
 
-  async function onAction(formData: FormData) {
-    setPending(true)
-    setMsg(null)
-    try {
-      const res = await requestBooking(formData)
-      setMsg(res?.ok ? "Request received! We’ll email to confirm a time." : res?.message || "Something went wrong.")
-    } catch {
-      setMsg("Something went wrong.")
-    } finally {
-      setPending(false)
+async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  e.preventDefault()
+  const form = e.currentTarget // <-- keep a stable ref right away
+  setPending(true)
+  setMsg(null)
+
+  const formData = new FormData(form)
+  formData.append("access_key", "858a7bae-93fb-4f82-af94-dcdd16e20c5b")
+
+  try {
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    })
+
+    const data = await res.json()
+    console.log("data", data.success)
+
+    if (data.success) {
+      setMsg("✅ Request received! We’ll email you to confirm a time.")
+      form.reset() // <-- use the saved reference, not e.currentTarget
+    } else {
+      setMsg(data.message || "❌ Something went wrong. Please try again.")
     }
+  } catch (err) {
+    setMsg("⚠️ Network error. Please try again later.")
+  } finally {
+    setPending(false)
   }
+}
+
 
   return (
-    <form action={onAction} className="space-y-5">
+    <form onSubmit={onSubmit} className="space-y-5">
       <div className="grid md:grid-cols-2 gap-4">
         <div>
           <Label htmlFor="name">Name</Label>
@@ -52,10 +71,11 @@ export function BookingForm() {
         <Textarea id="notes" name="notes" placeholder="Share context or questions ahead of time..." />
       </div>
 
-      <Button type="submit" disabled={pending}>
+      <Button type="submit" disabled={pending} className="w-full">
         {pending ? "Sending..." : "Request meeting"}
       </Button>
-      {msg && <p className="text-sm">{msg}</p>}
+
+      {msg && <p className="text-sm text-center">{msg}</p>}
     </form>
   )
 }

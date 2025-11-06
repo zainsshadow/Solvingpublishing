@@ -159,13 +159,14 @@ export function LeadForm({ preselect }: { preselect?: string }) {
       {/* Honeypot (hidden) */}
       <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
 
-      <label className="flex items-center gap-2 text-sm">
-        <input type="checkbox" name="consent" required className="border rounded" />
+      <label className="flex items-start gap-2 text-sm ">
+        <input type="checkbox" name="consent" required className="border rounded mt-1" />
         <span>
           I agree to the{" "}
           <a className="underline" href="/terms" target="_blank" rel="noreferrer">Terms</a>{" "}
           and acknowledge the{" "}
-          <a className="underline" href="/privacy" target="_blank" rel="noreferrer">Privacy Policy</a>.
+          <a className="underline" href="/privacy" target="_blank" rel="noreferrer">Privacy Policy </a>.
+          By signing up, you agree to receive recurring marketing messages from Solving Publishing. Message frequency may vary. Message & data rates may apply. Reply STOP to cancel or HELP for help.
         </span>
       </label>
 

@@ -16,7 +16,8 @@ export default function PrivacyPage() {
       <h2 className="font-serif text-2xl mt-8 mb-2">1) Information We Collect</h2>
       <p>
         We collect information you provide directly (e.g., contact/booking forms: name, email, phone, project details),
-        and information gathered automatically through standard web analytics (e.g., device, pages visited).
+        and information gathered automatically through standard web analytics (e.g., device, pages visited). 
+        By signing up, you agree to receive recurring marketing messages from Solving Publishing. Message frequency may vary. Message & data rates may apply. Reply STOP to cancel or HELP for help.
       </p>
 
       <h2 className="font-serif text-2xl mt-8 mb-2">2) How We Use Information</h2>

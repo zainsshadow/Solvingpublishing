@@ -43,7 +43,7 @@ export default function RootLayout({
           <Analytics />
         </Suspense>
 
-        {/* ✅ Add Tawk.to here */}
+        {/* ✅ Tawk.to Chat Widget */}
         <Script
           id="tawk-to"
           strategy="afterInteractive"
@@ -53,7 +53,7 @@ export default function RootLayout({
               (function(){
                 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
                 s1.async=true;
-                s1.src='https://embed.tawk.to/690ccf44747c26195a21551d/1j9d0j9p9';
+                s1.src='https://embed.tawk.to/690cdc96af0aca1959507058/1j9d3rb33';
                 s1.charset='UTF-8';
                 s1.setAttribute('crossorigin','*');
                 s0.parentNode.insertBefore(s1,s0);

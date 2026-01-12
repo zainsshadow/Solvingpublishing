@@ -9,32 +9,32 @@ type Item = {
 
 const ITEMS: Item[] = [
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2012%2C%202025%2C%2002_15_24%20PM-E05tr4mzwZ72TyS9UW0JjfAsz5TCot.png",
+    src: "/portfolio/action.png",
     alt: "Dynamic manga action page, expressive motion lines and panel flow.",
     caption: "Graphic novel sequencing · Action storytelling",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2012%2C%202025%2C%2002_10_46%20PM-lCbURhsmB3zZlEFcOqP3586mZLzqEY.png",
+    src: "/portfolio/actionscifi.png",
     alt: "Three-panel village defense with charming animal heroes vs. robots.",
     caption: "Kids series illustration · Character consistency",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2012%2C%202025%2C%2002_14_22%20PM-RIUZT8Fd7b0PpV7BRA3ph0QwL2Kcc5.png",
+    src: "/portfolio/winter.png",
     alt: "Mythic portrait with fox mask and wolf spirit in sumi ink style.",
     caption: "Cover art · Folklore & literary fiction",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Bitwa%20o%20Ponga_%20Kosmiczna%20Przygoda-FX6RNXcoN2QQfzC6ShcY75zLOXXSht.png",
+    src: "/portfolio/cover.png",
     alt: "Bold sci‑fi poster with a heroic cat commander, dinosaurs, and robots.",
     caption: "Marketing key art · Read‑aloud appeal",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2012%2C%202025%2C%2002_14_13%20PM-XUW8czJi9gNBbdSbjRZ4jRSZP4Oe79.png",
+    src: "/portfolio/metal.png",
     alt: "Five young heroes wielding elemental powers with dynamic lighting.",
     caption: "YA fantasy ensemble · Series branding",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%20Oct%2012%2C%202025%2C%2002_14_52%20PM-gr3y6yMtbV0jknfcYezjnTrxgcbrlq.png",
+    src: "/portfolio/racing.png",
     alt: "Whimsical fairy and friends in a twilight meadow.",
     caption: "Picture book spread · Soft painterly style",
   },
